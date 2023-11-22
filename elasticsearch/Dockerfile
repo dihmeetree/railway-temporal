@@ -8,5 +8,5 @@ ARG cluster.routing.allocation.disk.watermark.low=512mb
 ARG discovery.type=single-node
 ARG network.bind_host=0.0.0.0
 ARG network.publish_host=127.0.0.1
-ARG path.data: /var/lib/elasticsearch/data
+ARG path.data=/var/lib/elasticsearch/data
 ARG xpack.security.enabled=false
