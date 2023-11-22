@@ -1,4 +1,4 @@
-FROM temporalio/auto-setup:1.22
+FROM temporalio/auto-setup:1.22.1.0
 
 ARG DB DBNAME DB_PORT POSTGRES_USER POSTGRES_PWD POSTGRES_SEEDS
 
