@@ -6,4 +6,5 @@ ARG cluster.routing.allocation.disk.watermark.flood_stage=128mb
 ARG cluster.routing.allocation.disk.watermark.high=256mb
 ARG cluster.routing.allocation.disk.watermark.low=512mb
 ARG discovery.type=single-node
+ARG network.bind_host=0.0.0.0
 ARG xpack.security.enabled=false
