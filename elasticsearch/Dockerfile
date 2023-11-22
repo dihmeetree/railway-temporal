@@ -1,4 +1,4 @@
-FROM elasticsearch/elasticsearch:7.17.15
+FROM elasticsearch/elasticsearch:7.17.14
 
 ARG ES_JAVA_OPTS="-Xms512m -Xmx512m"
 ARG cluster.routing.allocation.disk.threshold_enabled=true
