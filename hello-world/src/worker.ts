@@ -6,7 +6,6 @@ async function run() {
   const connection = await NativeConnection.connect({
     address: 'temporal.railway.internal:7233',
   })
-  // Generate a number between 1 and 10000
   const worker = await Worker.create({
     activities,
     connection,
@@ -15,7 +14,7 @@ async function run() {
     workflowBundle: {
       codePath: require.resolve('../workflow-bundle.js'),
     },
-    identity: 'worker-' + Math.floor(Math.random() * 100000 + 1),
+    identity: `${process.env.RAILWAY_REPLICA_ID}`,
   })
   await worker.run()
 }
