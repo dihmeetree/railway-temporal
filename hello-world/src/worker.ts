@@ -8,9 +8,9 @@ async function run() {
   })
   const worker = await Worker.create({
     activities,
-    taskQueue: 'hello-world',
     connection,
     namespace: 'default',
+    taskQueue: 'hello-world',
     workflowBundle: {
       codePath: require.resolve('../workflow-bundle.js'),
     },
