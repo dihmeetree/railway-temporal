@@ -14,7 +14,7 @@ async function run() {
     workflowBundle: {
       codePath: require.resolve('../workflow-bundle.js'),
     },
-    identity: `${process.env.RAILWAY_REPLICA_ID}`,
+    identity: process.env.RAILWAY_REPLICA_ID,
   })
   await worker.run()
 }
