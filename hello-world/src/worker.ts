@@ -14,6 +14,7 @@ async function run() {
     workflowBundle: {
       codePath: require.resolve('../workflow-bundle.js'),
     },
+    buildId: '0.0.1',
     useVersioning: true,
   })
   await worker.run()
