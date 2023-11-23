@@ -7,11 +7,9 @@ async function run() {
   const connection = await Connection.connect({
     address: 'temporal.railway.internal:7233',
   });
-
   const client = new Client({
     connection,
   });
-
   const handle = await client.workflow.start(example, {
     args: ['Temporal'],
     taskQueue: 'hello-world',
