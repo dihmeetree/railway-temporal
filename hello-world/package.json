@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "tsc --build",
+    "build:workflow": "ts-node scripts/build.ts",
     "build.watch": "tsc --build --watch",
     "lint": "eslint .",
     "start": "ts-node src/worker.ts",

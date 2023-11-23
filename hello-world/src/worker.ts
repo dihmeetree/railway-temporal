@@ -10,6 +10,9 @@ async function run() {
     connection: await NativeConnection.connect({
       address: 'temporal.railway.internal:7233',
     }),
+    workflowBundle: {
+      codePath: require.resolve('../workflow-bundle.js'),
+    },
   })
   await worker.run()
 }
