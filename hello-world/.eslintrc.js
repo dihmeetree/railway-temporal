@@ -1,6 +1,6 @@
-const { builtinModules } = require('module');
+const { builtinModules } = require('module')
 
-const ALLOWED_NODE_BUILTINS = new Set(['assert']);
+const ALLOWED_NODE_BUILTINS = new Set(['assert'])
 
 module.exports = {
   root: true,
@@ -40,9 +40,11 @@ module.exports = {
       rules: {
         'no-restricted-imports': [
           'error',
-          ...builtinModules.filter((m) => !ALLOWED_NODE_BUILTINS.has(m)).flatMap((m) => [m, `node:${m}`]),
+          ...builtinModules
+            .filter((m) => !ALLOWED_NODE_BUILTINS.has(m))
+            .flatMap((m) => [m, `node:${m}`]),
         ],
       },
     },
   ],
-};
+}

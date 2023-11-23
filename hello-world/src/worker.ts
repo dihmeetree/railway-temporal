@@ -1,18 +1,20 @@
-import { NativeConnection, Worker } from '@temporalio/worker';
+import { NativeConnection, Worker } from '@temporalio/worker'
 
-import * as activities from './activities';
+import * as activities from './activities'
 
 async function run() {
   const worker = await Worker.create({
     workflowsPath: require.resolve('./workflows'),
     activities,
     taskQueue: 'hello-world',
-    connection: await NativeConnection.connect({ address: 'temporal.railway.internal:7233' }),
-  });
-  await worker.run();
+    connection: await NativeConnection.connect({
+      address: 'temporal.railway.internal:7233',
+    }),
+  })
+  await worker.run()
 }
 
 run().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+  console.error(err)
+  process.exit(1)
+})
