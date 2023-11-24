@@ -1,7 +1,7 @@
 # Configure dynamic values here:
 # https://docs.temporal.io/references/dynamic-configuration
 
-history.persistenceNamespaceMaxQPS:
+system.shardRPSWarnLimit:
   - value: 100
     constraints: {}
 limit.maxIDLength:
