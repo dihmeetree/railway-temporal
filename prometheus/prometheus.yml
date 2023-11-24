@@ -7,9 +7,5 @@ scrape_configs:
     static_configs:
       - targets:
           - "temporal.railway.internal:8000"
-          - "temporal.railway.internal:8001"
-          - "temporal.railway.internal:8002"
-          - "temporal.railway.internal:8003"
-          - "temporal.railway.internal:8004"
         labels:
           group: "server-metrics"
