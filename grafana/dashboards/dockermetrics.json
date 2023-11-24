@@ -82,9 +82,7 @@
         "justifyMode": "auto",
         "orientation": "horizontal",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -846,11 +844,7 @@
   ],
   "schemaVersion": 36,
   "style": "dark",
-  "tags": [
-    "docker",
-    "docker metrics",
-    "docker engine"
-  ],
+  "tags": ["docker", "docker metrics", "docker engine"],
   "templating": {
     "list": [
       {
@@ -999,17 +993,7 @@
       "2h",
       "1d"
     ],
-    "time_options": [
-      "5m",
-      "15m",
-      "1h",
-      "6h",
-      "12h",
-      "24h",
-      "2d",
-      "7d",
-      "30d"
-    ]
+    "time_options": ["5m", "15m", "1h", "6h", "12h", "24h", "2d", "7d", "30d"]
   },
   "timezone": "browser",
   "title": "Docker Engine Metrics",
