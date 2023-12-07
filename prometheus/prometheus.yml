@@ -6,9 +6,9 @@ scrape_configs:
     scheme: http
     static_configs:
       - targets:
-          - "temporal.railway.internal:8000"
-          - "temporal.railway.internal:8001"
-          - "temporal.railway.internal:8002"
-          - "temporal.railway.internal:8003"
+          - "temporal-history-service.railway.internal:8000"
+          - "temporal-matching-service.railway.internal:8001"
+          - "temporal-frontend-service.railway.internal:8002"
+          - "temporal-matching-service.railway.internal:8003"
         labels:
           group: "server-metrics"
