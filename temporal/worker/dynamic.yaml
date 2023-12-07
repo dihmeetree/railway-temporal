@@ -1,7 +1,9 @@
 # Configure dynamic values here:
 # https://docs.temporal.io/references/dynamic-configuration
 
-global.membership.broadcastAddress: 127.0.0.1
+global:
+  membership:
+    broadcastAddress: "127.0.0.1"
 system.shardRPSWarnLimit:
   - value: 100
     constraints: {}
