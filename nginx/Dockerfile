@@ -1,3 +1,5 @@
-FROM caddy:latest
+FROM nginx:1.22.1
 
-COPY Caddyfile /etc/caddy/Caddyfile
+COPY ./nginx.conf /etc/nginx/nginx.conf
+
+ENV ENABLE_ALPINE_PRIVATE_NETWORKING=true

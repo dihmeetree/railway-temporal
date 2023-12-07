@@ -1,6 +1,0 @@
-reverse_proxy :7233 {
-    to h2c://temporal-frontend-service.railway.internal:7237
-    transport http {
-        versions h2c 2
-    }
-}
