@@ -1,9 +1,7 @@
-FROM nginx:alpine
+FROM nginxdemos/hello:plain-text
 
-USER 0
-
-COPY ./nginx.conf /etc/nginx/nginx.conf
+# COPY ./nginx.conf /etc/nginx/nginx.conf
 
 ENV ENABLE_ALPINE_PRIVATE_NETWORKING=true
 
-EXPOSE 7233
+EXPOSE 80
