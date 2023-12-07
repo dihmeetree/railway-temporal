@@ -1,3 +1,0 @@
-:7233 {
-  reverse_proxy temporal-frontend-service.railway.internal:7237
-}
