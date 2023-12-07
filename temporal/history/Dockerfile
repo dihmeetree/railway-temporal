@@ -4,7 +4,7 @@ ARG DB DBNAME DB_PORT POSTGRES_USER POSTGRES_PWD POSTGRES_SEEDS
 
 COPY ./dynamic.yaml /etc/temporal/config/dynamicconfig/dynamic.yaml
 
-# ENV BIND_ON_IP="0.0.0.0"
+ENV BIND_ON_IP="0.0.0.0"
 ENV DB="postgresql"
 ENV DB_PORT=5432
 ENV DYNAMIC_CONFIG_FILE_PATH="config/dynamicconfig/dynamic.yaml"
