@@ -1,7 +1,3 @@
-FROM nginxdemos/hello:plain-text
+FROM caddy:latest
 
-# COPY ./nginx.conf /etc/nginx/nginx.conf
-
-ENV ENABLE_ALPINE_PRIVATE_NETWORKING=true
-
-EXPOSE 80
+COPY Caddyfile /etc/caddy/Caddyfile
