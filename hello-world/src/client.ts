@@ -5,7 +5,7 @@ import { example } from './workflows'
 
 async function run() {
   const connection = await Connection.connect({
-    address: 'temporal.railway.internal:7233',
+    address: 'temporal-frontend-service.railway.internal:7233',
   })
   const client = new Client({
     connection,

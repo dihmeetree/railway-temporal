@@ -4,7 +4,7 @@ import * as activities from './activities'
 
 async function run() {
   const connection = await NativeConnection.connect({
-    address: 'temporal.railway.internal:7233',
+    address: 'temporal-frontend-service.railway.internal:7233',
   })
   const worker = await Worker.create({
     activities,
