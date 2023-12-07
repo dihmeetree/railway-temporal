@@ -1,0 +1,3 @@
+:7233 {
+  reverse_proxy grpc://temporal-frontend-service.railway.internal:7237
+}
